@@ -3,47 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <script src="app.js"></script> 
-    
-
-    <title>Document</title>
+    <title>Scaler Social</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="icon" href="./assets/icons8-connect.svg" type="image/x-icon"> -->
 </head>
 <body>
-    <nav>
-        <div class="sst">
-            <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/033/original/SST_Logo.png">
-        </div>
-        <div class="scaler-social">
-            <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/032/original/scaler-social.png">
-        </div>
-    </nav>
-    <div class="main">
-        <div class="left-main">
-            <div class="commentbox">
-                <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png">
-                <h3>Post your thoughts here</h3>
-                <textarea class="commentbox-text" placeholder="Type your thoughts here">
-                </textarea>
-            </div>
-            <div class="sbtn">
+    <!-- Header of the project includes 2 logos -->
+    <header>
+        <!-- <h1>Scaler School of technlogy</h1> -->
+        <img src="./assets/SST_Logo.png" alt="scaler School of technlogy">
+        <img src="./assets/scaler-social.png" alt="scaler scocial">
+        <!-- <h1>Scaler Social</h1> -->
+    </header>
 
-                <button class="submitbtn" onclick="sendComment()">Post</button>
-            </div>
-        </div>
-        <div class="right-main">
-           <h2 class="your-feed">Your Feed</h2>
+    <!-- main section of the project including Post container and Feeds -->
+    <main>
+
+        <!-- post container includes 3 sections -->
+      <section class="container">
+        <section class="post-container">
+            <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Post your thoughts here</h1>
+            <!-- POST CARD DIVIDED in 2 sections upper and lower -->
+            <section class="post-card">
+
+                
+                <section class="upper">
+                    <section class="user-icon">
+                        <img src="./assets/profile_image.png" alt="" width="45px" height="45px">
+                    </section>
+                    <section class="post-area">
+                        <textarea class="text-area" placeholder="Type your thoughts here..."></textarea>
+                    </section>
+                </section>
+
+                
+                <section class="lower">
+                    <p class="char-count">0/100</p>
+                    <button class="post-button" style="height: 35px;">Post</button>
+                </section>
+            </section>
+
+        </section>
+      </section>
+
+        <!-- Post Container end---x---- -->
+
+        
+        <section class="feeds">
+            <h1>Your Feeds</h1>
+            <section class="feed-container">
+
+                <section class="feed-card">
+
+                    <section class="user-icon">
+                        <img src="./assets/profile_image.png" width="40px" height="40px" alt="">
+                    </section>
+
+                    <section class="feed-content">
+        
+                       <section class="username">
+                        <h3>Joanne Graham</h3>
+                        <span>@joanegraham123</span>
+                        <img class="edit" src="./assets/edit.png" alt="edit button">
+                        <img class="delete" src="./assets/delete.png" alt="delete button">
+                       </section>
+
+                       <section class="feed-post">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, velit.</section>
+
+                       <section class="post-area none">
+                        <textarea name="" class="text-area"  placeholder="thoughts..."  ></textarea>
+                    </section>
+                       <section class="feed-reactions">
+                        <img class="comment" src="./assets/comment.png" alt="">
+                        <img  class="like" src="./assets/heart.png" alt="">
+                        <label class="reaction">Reacted: 567</label>
+                       </section>
+
+                       <section class="lower none">
+                        <p class="char-count">0/100</p>
+                        <button class="cancel-button" style="height: 35px;">Cancel</button>
+
+                        <button class="feed-button" style="height: 35px;">Post</button>
+                        </section>
+
+
+                    </section>
+                </section>
+                
+
+                <section class="feed-comments">
+
+                    
+                    <section class="comment-box none">
+
+                        <section class="user-icon">
+                            <img src="./assets/profile_image.png" width="30px" height="30px" alt="">
+                        </section>
+    
+                        <section class="feed-content">    
+
+                           <section class="post-area">
+                            <textarea name="" class="text-area" style="height: 60px;" placeholder="Type your thoughts..." value="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, velit.." ></textarea>
+                            </section>
+
+
+                           <section class="lower">
+                            <p class="char-count">0/100</p>
+                            <button class="cancelButton" style="height: 35px; width: 100px">Cancel</button>
+
+                            <button class="commentButton" style="height: 35px; width: 100px;" >comment</button>
+                           </section>
+    
+    
+                        </section>
+                    </section>
+
+                
+
+                    <section class="feed-card">
+
+                        <section class="user-icon">
+                            <img src="./assets/profile_image.png" width="30px" height="30px" alt="">
+                        </section>
+    
+                        <section class="feed-content">
             
-            <div class="comment-text">
-                <div class="comment-top">
-                    <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png">
-                    <h3>Joanne Graham</h3>
-                    <p>@joannegraham123</p>
-                </div>
-                <p>sir, i tried to make html, css atleast, so please give me thodu sa, marks.....</p>
-            </div>
-        </div>
-        </div>
-    </div>
+                           <section class="username">
+                           
+                            <span>@joanegraham123</span>
+                            <img class="edit" src="./assets/edit.png" alt="edit button">
+                            <img class="delete-comment" src="./assets/delete.png" alt="delete button">
+                           </section>
+    
+                           <section class="feed-post">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, velit.</section>
+
+                           <section class="post-area none">
+                            <textarea name="" class="text-area"  placeholder="thoughts..." value="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, velit.." ></textarea>
+                        </section>
+    
+                           <section class="feed-reactions">
+                            
+                            <img  class="like" src="./assets/heart.png" alt="">
+                            <label class="reaction">Reacted: 567</label>
+                           </section>
+
+                           <section class="lower none">
+                            <p class="char-count">0/100</p>
+                            <button class="cancel-button" style="height: 35px;">Cancel</button>
+
+                            <button class="feed-button" style="height: 35px;">Post</button>
+                        </section>
+    
+    
+                        </section>
+                    </section>
+                    
+                </section>
+
+            </section>
+
+        </section>
+    </main>
 </body>
+<script src="index.js"></script>
 </html>
